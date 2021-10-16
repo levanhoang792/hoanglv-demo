@@ -23,6 +23,38 @@
           box-sizing: border-box;
 }
 
+.hot-label {
+  background: #ee533a;
+  border-radius: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 35px;
+  width: 84px;
+  margin: auto;
+  padding-bottom: 5px;
+}
+
+.big-label-yellow {
+  background: #f3cb62;
+  border: .5px solid #f3cb62;
+  -webkit-box-shadow: 0 5px 5px rgba(182, 131, 0, 0.1);
+          box-shadow: 0 5px 5px rgba(182, 131, 0, 0.1);
+  border-radius: 65px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #64471c;
+  text-transform: uppercase;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 3.8rem;
+  padding-right: 3.8rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #wrapper {
   position: relative;
 }
@@ -54,7 +86,7 @@
   }
 }
 
-#wrapper .main-content {
+#wrapper #body-main-content {
   -o-object-fit: cover;
      object-fit: cover;
   background-size: cover;
@@ -66,30 +98,33 @@
   display: inline-table;
 }
 
-#wrapper .main-content #full-main-content {
+#wrapper #body-main-content #full-main-content {
   height: 100%;
 }
 
-#wrapper .main-content #full-main-content .section-content:not(.active) {
+#wrapper #body-main-content #full-main-content .section-content:not(.active) {
   display: none;
 }
 
-#wrapper .main-content #full-main-content .section-content {
+#wrapper #body-main-content #full-main-content .section-content {
   padding-top: 8rem;
 }
 
-#wrapper .main-content #full-main-content .gioi-thieu h1 {
+#wrapper #body-main-content #full-main-content .section-content h1 {
   color: #e3a554;
   line-height: 5rem;
   margin: 2rem 0;
   font-size: 4rem;
 }
 
-#wrapper .main-content #full-main-content .gioi-thieu .itemCompany .backGround {
+#wrapper #body-main-content #full-main-content .section-content .itemCompany .backGround {
   margin: .5rem 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
-#wrapper .main-content #full-main-content .gioi-thieu .itemCompany .backGround > div {
+#wrapper #body-main-content #full-main-content .section-content .itemCompany .backGround > div {
   background: rgba(168, 148, 123, 0.05);
   -webkit-backdrop-filter: blur(33px);
           backdrop-filter: blur(33px);
@@ -101,7 +136,7 @@
   margin: auto;
 }
 
-#wrapper .main-content #full-main-content .gioi-thieu .itemCompany .backGround > div > div {
+#wrapper #body-main-content #full-main-content .section-content .itemCompany .backGround > div > div {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -110,6 +145,16 @@
   background-color: #ffffff;
   border-radius: 50%;
   margin: .5rem;
+}
+
+#wrapper #body-main-content #full-main-content .hot-information .content-animation .content-top h1 {
+  color: #695548;
+}
+
+#wrapper #body-main-content #full-main-content .hot-information .content-animation .content-mid h3 {
+  font-size: 1.35rem;
+  line-height: 2rem;
+  font-weight: 100;
 }
 
 #wrapper footer .footer .footer-right {

@@ -20,6 +20,11 @@
 	<link rel="stylesheet" href="css/bootstrap-5.1.3/bootstrap.min.css">
     <link rel="stylesheet" href="css/fontawesome/fontawesome.min.css">
 
+    <!-- Slide css -->
+    <link rel="stylesheet" href="slick-1.8.1/slick.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick-theme.css">
+
+
 	<!-- Cusom css -->
    <link rel="stylesheet" href="css/custom.css?v0.0.1">
    <link rel="stylesheet" href="css/style-config.css">
@@ -49,13 +54,15 @@
                 </div>
             </div>
         </div>
-        <div class="main-content" style="background-image: url('https://www.cattiensa.com/images/bg2x.jpg');">
+        <div id="body-main-content" class="main-content pb-5" style="background-image: url('https://www.cattiensa.com/images/bg2x.jpg');">
             <div id="full-main-content" class="full-main-content">
                 <div class="gioi-thieu section-content active text-center">
                     <div class="content">
                         <div class="content-animation">
-                            <div>
-                                <img alt="Cattiensa" width="420px" height="370px" src="https://www.cattiensa.com/images/logo.svg">
+                            <div class="d-flex flex-column justify-content-center">
+                                <div class="image-content">
+                                    <img alt="Cattiensa" width="420px" height="370px" src="https://www.cattiensa.com/images/logo.svg">
+                                </div>
                                 <h1 class="text">Tập đoàn truyền thông <br> Hàng đầu việt Nam</h1>
                                 <div>
                                     <div>
@@ -102,17 +109,54 @@
                         </div>
                     </div>
                 </div>
-                <div class="gioi-thieu section-content text-center">
+                <div class="hot-information section-content active text-center active">
                     <div class="content">
                         <div class="content-animation">
-                            <div>
-                                <img alt="Cattiensa" width="420px" height="370px" src="https://www.cattiensa.com/images/logo.svg">
-                                <h1>Tập đoàn truyền thông <br> Hàng đầu việt Nam</h1>
+                            <div class="d-flex flex-column justify-content-center">
+                                <div class="content-top">
+                                    <div class="hot-label">HOT</div>
+                                    <h1 class="text-uppercase font-impact">CHÚNG TÔI ĐANG CẦN TUYỂN NHỮNG VỊ TRÍ</h1>
+                                </div>
+                                <div class="content-mid">
+                                    <h3 class="big-label-yellow py-2 mb-5 font-montserrat">Gia nhập cùng chúng tôi để <br> Cùng sáng tạo ra những giá trị mới</h3>
+                                </div>
                                 <div>
                                     <div>
-                                        <div class="itemCompany">
-                                            <div class="backGround">
-                                                <img alt="Cát Tiên Sa" width="67px" height="75px" class="" src="https://www.cattiensa.com/images/logo-cattiensa.svg">
+                                        <div class="itemCompany row justify-content-center w-100">
+                                            <div class="backGround col-xl-2 col-lg-2 col-md-2 col-sm-4">
+                                                <div>
+                                                    <div>
+                                                        <img alt="Cát Tiên Sa" width="67px" height="75px" class="" src="https://www.cattiensa.com/images/logo-cattiensa.svg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="backGround col-xl-2 col-lg-2 col-md-2 col-sm-4">
+                                                <div>
+                                                    <div>
+                                                        <img alt="Cát Tiên Sa" width="67px" height="75px" class="" src="https://www.cattiensa.com/images/logo-cattiensa.svg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="backGround col-xl-2 col-lg-2 col-md-2 col-sm-4">
+                                                <div>
+                                                    <div>
+                                                        <img alt="Cát Tiên Sa" width="67px" height="75px" class="" src="https://www.cattiensa.com/images/logo-cattiensa.svg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="backGround col-xl-2 col-lg-2 col-md-2 col-sm-4">
+                                                <div>
+                                                    <div>
+                                                        <img alt="Cát Tiên Sa" width="67px" height="75px" class="" src="https://www.cattiensa.com/images/logo-cattiensa.svg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="backGround col-xl-2 col-lg-2 col-md-2 col-sm-4">
+                                                <div>
+                                                    <div>
+                                                        <img alt="Cát Tiên Sa" width="67px" height="75px" class="" src="https://www.cattiensa.com/images/logo-cattiensa.svg">
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -123,6 +167,14 @@
                 </div>
             </div>
         </div>
+        <!-- <div class="slider">
+            <div><img alt="Cát Tiên Sa" width="67px" height="75px" class="" src="https://www.cattiensa.com/images/logo-cattiensa.svg"></div>
+            <div><img alt="Cát Tiên Sa" width="67px" height="75px" class="" src="https://www.cattiensa.com/images/logo-cattiensa.svg"></div>
+            <div><img alt="Cát Tiên Sa" width="67px" height="75px" class="" src="https://www.cattiensa.com/images/logo-cattiensa.svg"></div>
+            <div><img alt="Cát Tiên Sa" width="67px" height="75px" class="" src="https://www.cattiensa.com/images/logo-cattiensa.svg"></div>
+            <div><img alt="Cát Tiên Sa" width="67px" height="75px" class="" src="https://www.cattiensa.com/images/logo-cattiensa.svg"></div>
+            <div><img alt="Cát Tiên Sa" width="67px" height="75px" class="" src="https://www.cattiensa.com/images/logo-cattiensa.svg"></div>
+          </div> -->
         <footer>
             <div class="footer row m-3">
                 <div class="footer-left col-lg-6 col-sm-12 col-xl-6 border-solid">
@@ -171,6 +223,8 @@
 	<!-- <script src="js/popper.min.js"></script> -->
 	<script src="js/bootstrap/bootstrap.min.js"></script>
 	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="slick-1.8.1/slick.js"></script>
+	<script src="js/custom.js"></script>
 	<!-- <script src="js/plugins.js"></script> -->
 	<!-- <script src="js/active.js"></script> -->
 	
