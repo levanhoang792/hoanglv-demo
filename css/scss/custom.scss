@@ -1,7 +1,6 @@
-$homePage: '../webfonts/';
 @font-face {
     font-family: UTMBebas;
-    src: url($homePage + "UTM\ Bebas.ttf") format("truetype");
+    src: url("webfonts/UTM\ Bebas.ttf") format("truetype");
         // url("../fonts/Captureit.eot#iefix") format("embedded-opentype"),
         // url("../fonts/Captureit.woff") format("woff");
     font-weight: normal;
