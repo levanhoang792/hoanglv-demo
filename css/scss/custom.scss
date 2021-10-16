@@ -35,9 +35,20 @@
     padding-bottom: 5px;
 }
 
+.hot-title {
+    background: #dc2626;
+    border-radius: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    width: 4.5rem;
+    margin: auto;
+    padding-bottom: 2px;
+}
+
 .big-label-yellow {
     background: #f3cb62;
-    border: .5px solid #f3cb62;
+    border: 0.5px solid #f3cb62;
     box-shadow: 0 5px 5px rgba(182, 131, 0, 0.1);
     border-radius: 65px;
     align-items: center;
@@ -49,6 +60,10 @@
     padding-right: 3.8rem;
     margin-left: auto;
     margin-right: auto;
+}
+
+.owl-carousel .owl-stage {
+    display: flex;
 }
 
 #wrapper {
@@ -101,10 +116,10 @@
                 }
                 .itemCompany {
                     .backGround {
-                        margin: .5rem 0;
+                        margin: 0.5rem 0;
                         width: fit-content;
                         & > div {
-                            background: rgba(168,148,123,.05);
+                            background: rgba(168, 148, 123, 0.05);
                             backdrop-filter: blur(33px);
                             border: 1px solid #c9c5aa;
                             border-radius: 50%;
@@ -116,7 +131,7 @@
                                 margin: 0 1rem;
                                 background-color: #ffffff;
                                 border-radius: 50%;
-                                margin: .5rem;
+                                margin: 0.5rem;
                             }
                         }
                     }
@@ -131,6 +146,43 @@
                         font-size: 1.35rem;
                         line-height: 2rem;
                         font-weight: 100;
+                    }
+                    & .content-bot #slider .owl-carousel .items {
+                        display: grid;
+                        width: 100%;
+                        height: 100%;
+                        & > .outline {
+                            margin: 0.5rem 1.5rem;
+                            background: #fff;
+                            box-shadow: 0 3px 4px #602f0140;
+                            border-radius: 18px;
+                            & > .outborder {
+                                padding: 1.65rem;
+                                height: 100%;
+                                & > .content-slider {
+                                    height: 100%;
+                                    border: 3px solid #695548;
+                                    padding: 1.2rem 0;
+                                    border-radius: 10px;
+                                    & > h3 {
+                                        color: #695548;
+                                        margin-bottom: 1.75rem;
+                                        padding: 0 1rem;
+                                    }
+                                    & > .hot-title {
+                                        margin-bottom: 0;
+                                    }
+                                    & > p {
+                                        margin-top: 0.75rem;
+                                        color: #695548;
+                                        &:last-child {
+                                            color: #c8b89e;
+                                            font-weight: lighter;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }

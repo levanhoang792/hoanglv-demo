@@ -34,9 +34,20 @@
   padding-bottom: 5px;
 }
 
+.hot-title {
+  background: #dc2626;
+  border-radius: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  width: 4.5rem;
+  margin: auto;
+  padding-bottom: 2px;
+}
+
 .big-label-yellow {
   background: #f3cb62;
-  border: .5px solid #f3cb62;
+  border: 0.5px solid #f3cb62;
   -webkit-box-shadow: 0 5px 5px rgba(182, 131, 0, 0.1);
           box-shadow: 0 5px 5px rgba(182, 131, 0, 0.1);
   border-radius: 65px;
@@ -53,6 +64,12 @@
   padding-right: 3.8rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+.owl-carousel .owl-stage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #wrapper {
@@ -116,7 +133,7 @@
 }
 
 #wrapper #body-main-content #full-main-content .section-content .itemCompany .backGround {
-  margin: .5rem 0;
+  margin: 0.5rem 0;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -142,7 +159,7 @@
   margin: 0 1rem;
   background-color: #ffffff;
   border-radius: 50%;
-  margin: .5rem;
+  margin: 0.5rem;
 }
 
 #wrapper #body-main-content #full-main-content .hot-information .content-animation .content-top h1 {
@@ -153,6 +170,53 @@
   font-size: 1.35rem;
   line-height: 2rem;
   font-weight: 100;
+}
+
+#wrapper #body-main-content #full-main-content .hot-information .content-animation .content-bot #slider .owl-carousel .items {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 100%;
+}
+
+#wrapper #body-main-content #full-main-content .hot-information .content-animation .content-bot #slider .owl-carousel .items > .outline {
+  margin: 0.5rem 1.5rem;
+  background: #fff;
+  -webkit-box-shadow: 0 3px 4px #602f0140;
+          box-shadow: 0 3px 4px #602f0140;
+  border-radius: 18px;
+}
+
+#wrapper #body-main-content #full-main-content .hot-information .content-animation .content-bot #slider .owl-carousel .items > .outline > .outborder {
+  padding: 1.65rem;
+  height: 100%;
+}
+
+#wrapper #body-main-content #full-main-content .hot-information .content-animation .content-bot #slider .owl-carousel .items > .outline > .outborder > .content-slider {
+  height: 100%;
+  border: 3px solid #695548;
+  padding: 1.2rem 0;
+  border-radius: 10px;
+}
+
+#wrapper #body-main-content #full-main-content .hot-information .content-animation .content-bot #slider .owl-carousel .items > .outline > .outborder > .content-slider > h3 {
+  color: #695548;
+  margin-bottom: 1.75rem;
+  padding: 0 1rem;
+}
+
+#wrapper #body-main-content #full-main-content .hot-information .content-animation .content-bot #slider .owl-carousel .items > .outline > .outborder > .content-slider > .hot-title {
+  margin-bottom: 0;
+}
+
+#wrapper #body-main-content #full-main-content .hot-information .content-animation .content-bot #slider .owl-carousel .items > .outline > .outborder > .content-slider > p {
+  margin-top: 0.75rem;
+  color: #695548;
+}
+
+#wrapper #body-main-content #full-main-content .hot-information .content-animation .content-bot #slider .owl-carousel .items > .outline > .outborder > .content-slider > p:last-child {
+  color: #c8b89e;
+  font-weight: lighter;
 }
 
 #wrapper footer .footer .footer-right {

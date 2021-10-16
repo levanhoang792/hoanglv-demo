@@ -1,14 +1,35 @@
 $(function () {
-    $(".owl-carousel").owlCarousel({
+    $("#slider .owl-carousel").owlCarousel({
         center: true,
         items: 3,
         loop: true,
         margin: 10,
-        // nav: true,
+        nav: true,
+        startPosition: 0,
+        autoHeight:true,
         responsive: {
             600: {
                 items: 3
             }
         }
     });
+
+    // let iScrollTop = 0;
+    // const gioiThieu = $("#gioi-thieu").height();
+    // const hotInformation = $("#hot-information").height();
+    // scrollFuntion(iScrollTop, gioiThieu);
 });
+
+// function scrollFuntion(iScrollTop, gioiThieu) {
+//     $(window).on("scroll", function () {
+//         const iCurScrollTop = $(window).scrollTop();
+//         if (iCurScrollTop > iScrollTop) {
+//             if (iCurScrollTop < gioiThieu) {
+//                 $(window).off("scroll");
+//                 $("#hot-information")[0].scrollIntoView();
+//                 console.log($(window).scrollTop())
+//                 // console.log("🚀 ~ file: custom.js ~ line 23 ~ $(window).scrollTop()", $("#gioi-thieu")[0].scrollHeight)
+//             }
+//         }
+//     });
+// }

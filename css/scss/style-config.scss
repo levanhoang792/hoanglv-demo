@@ -25,11 +25,26 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: UTMMontserratSemiBold;
+    src: url("webfonts/Montserrat-SemiBold.ttf") format("truetype");
+        // url("../fonts/Captureit.eot#iefix") format("embedded-opentype"),
+        // url("../fonts/Captureit.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
 .font-impact {
     font-family: UTMImpact !important;
 }
 .font-montserrat {
     font-family: UTMMontserrat !important;
+}
+.font-montserratsemibold {
+    font-family: UTMMontserratSemiBold !important;
+}
+.font-bebas {
+    font-family: UTMBebas !important;
 }
 
 .btnPrimary {
@@ -288,6 +303,9 @@
 .w--10 {
     width: 10%;
 }
+.w--100vw {
+    width: 100vw;
+}
 .h--100 {
     height: 100%;
 }
@@ -305,6 +323,9 @@
 }
 .h--10 {
     height: 10%;
+}
+.h--100vh {
+    height: 100vh;
 }
 
 /* Section padding */
