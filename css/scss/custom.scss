@@ -60,6 +60,7 @@
         height: 100vh;
         width: 100%;
         background-attachment: fixed;
+        display: inline-table;
         #full-main-content {
             height: 100%;
             .section-content:not(.active) {
@@ -68,9 +69,34 @@
             .section-content {
                 padding-top: 8rem;
             }
-            .gioi-thieu h1 {
-                color: #e3a554;
-                line-height: 4rem;
+            .gioi-thieu {
+                h1 {
+                    color: #e3a554;
+                    line-height: 5rem;
+                    margin: 2rem 0;
+                    font-size: 4rem;
+                }
+                .itemCompany {
+                    .backGround {
+                        margin: .5rem 0;
+                        & > div {
+                            background: rgba(168,148,123,.05);
+                            backdrop-filter: blur(33px);
+                            border: 1px solid #c9c5aa;
+                            border-radius: 50%;
+                            width: fit-content;
+                            margin: auto;
+                            & > div {
+                                width: fit-content;
+                                padding: 1.5rem 1.5rem;
+                                margin: 0 1rem;
+                                background-color: #ffffff;
+                                border-radius: 50%;
+                                margin: .5rem;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
