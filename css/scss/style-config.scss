@@ -1,3 +1,12 @@
+@font-face {
+    font-family: UTMBebas;
+    src: url("webfonts/UTM\ Bebas.ttf") format("truetype");
+        // url("../fonts/Captureit.eot#iefix") format("embedded-opentype"),
+        // url("../fonts/Captureit.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
 .btnPrimary {
     background: #f3cb62;
     box-shadow: 0 2px 2px rgba(90, 90, 90, 0.15);
