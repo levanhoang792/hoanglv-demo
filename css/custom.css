@@ -132,20 +132,57 @@
 }
 
 #wrapper #body-main-content #full-main-content .section-content h1 {
-  color: #e3a554;
   line-height: 5rem;
   margin: 2rem 0;
   font-size: 4rem;
 }
 
-#wrapper #body-main-content #full-main-content .section-content .itemCompany .backGround {
+@media (min-width: 700px) {
+  #wrapper #body-main-content #full-main-content .section-content h1 {
+    line-height: 4rem;
+    margin: .5rem 0;
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 500px) {
+  #wrapper #body-main-content #full-main-content .section-content h1 {
+    line-height: 3.5rem;
+    margin: .5rem 0;
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 700px) {
+  #wrapper #body-main-content #full-main-content .gioi-thieu .image-content img {
+    width: 300px;
+    height: 350px;
+  }
+}
+
+@media (min-width: 500px) {
+  #wrapper #body-main-content #full-main-content .gioi-thieu .image-content img {
+    width: 250px;
+    height: 300px;
+  }
+}
+
+#wrapper #body-main-content #full-main-content .gioi-thieu h1 {
+  color: #e3a554;
+}
+
+#wrapper #body-main-content #full-main-content .gioi-thieu .itemCompany {
+  margin-top: 1rem;
+}
+
+#wrapper #body-main-content #full-main-content .gioi-thieu .itemCompany .backGround {
   margin: 0.5rem 0;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 
-#wrapper #body-main-content #full-main-content .section-content .itemCompany .backGround > div {
+#wrapper #body-main-content #full-main-content .gioi-thieu .itemCompany .backGround > div {
   background: rgba(168, 148, 123, 0.05);
   -webkit-backdrop-filter: blur(33px);
           backdrop-filter: blur(33px);
@@ -157,7 +194,7 @@
   margin: auto;
 }
 
-#wrapper #body-main-content #full-main-content .section-content .itemCompany .backGround > div > div {
+#wrapper #body-main-content #full-main-content .gioi-thieu .itemCompany .backGround > div > div {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
