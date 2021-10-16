@@ -1,13 +1,13 @@
 @font-face {
     font-family: UTMBebas;
     src: url("webfonts/UTM\ Bebas.ttf") format("truetype");
-        // url("../fonts/Captureit.eot#iefix") format("embedded-opentype"),
-        // url("../fonts/Captureit.woff") format("woff");
+    // url("../fonts/Captureit.eot#iefix") format("embedded-opentype"),
+    // url("../fonts/Captureit.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
-* {
+*:not(i) {
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
@@ -15,9 +15,10 @@
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0.13);
     list-style: none;
     text-decoration: none !important;
-    font-family: UTMBebas;
-    font-size: 25px;
+    font-family: UTMBebas !important;
+    font-size: 1.3rem !important;
 }
+
 *::before,
 *::after {
     box-sizing: border-box;
@@ -29,7 +30,7 @@
         z-index: 5;
         padding: 14px 28.05px;
         background-size: cover;
-        filter: drop-shadow(0 2px 3px rgba(0,0,0,.15));
+        filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.15));
         position: fixed;
         width: 100vw;
         top: 0;
@@ -44,8 +45,8 @@
             }
             @media (min-width: 1700px) {
                 & > a {
-                    padding-right: 3rem !important;
-                    padding-left: 3rem !important;
+                    padding-right: 2rem !important;
+                    padding-left: 2rem !important;
                 }
             }
         }
@@ -65,7 +66,7 @@
         .footer {
             display: flex;
             & > div {
-               flex: 0 0 50%;
+                flex: 0 0 50%;
             }
             .footer-right {
                 & > div > div {
