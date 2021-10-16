@@ -3,6 +3,7 @@
   src: url("webfonts/UTM Bebas.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-size: 1.3rem !important;
 }
 
 *:not(i) {
@@ -14,7 +15,6 @@
   list-style: none;
   text-decoration: none !important;
   font-family: UTMBebas !important;
-  font-size: 1.3rem !important;
 }
 
 *::before,
@@ -82,20 +82,18 @@
   line-height: 4rem;
 }
 
-#wrapper footer .footer > div {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
+#wrapper footer .footer .footer-right {
+  padding: 0 0;
 }
 
 #wrapper footer .footer .footer-right > div > div {
-  padding-left: 3rem;
+  padding-left: 2rem;
 }
 
 #wrapper footer .footer .footer-right .footer-right-top .title {
   text-transform: uppercase;
   color: #f1be3a;
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 #wrapper footer .footer .footer-right .footer-right-bot {
@@ -122,6 +120,7 @@
 }
 
 #wrapper footer .footer .footer-right .footer-right-bot .top > div .foot-content .text {
+  font-weight: normal;
   color: #c8b99f;
 }
 /*# sourceMappingURL=custom.css.map */
