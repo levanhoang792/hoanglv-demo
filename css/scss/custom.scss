@@ -60,11 +60,23 @@
         height: 100vh;
         width: 100%;
         background-attachment: fixed;
+        #full-main-content {
+            height: 100%;
+            .section-content:not(.active) {
+                display: none;
+            }
+            .section-content {
+                padding-top: 8rem;
+            }
+            .gioi-thieu h1 {
+                color: #e3a554;
+                line-height: 4rem;
+            }
+        }
     }
 
     footer {
         .footer {
-            display: flex;
             & > div {
                 flex: 0 0 50%;
             }

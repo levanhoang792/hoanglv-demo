@@ -65,10 +65,21 @@
   background-attachment: fixed;
 }
 
-#wrapper footer .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+#wrapper .main-content #full-main-content {
+  height: 100%;
+}
+
+#wrapper .main-content #full-main-content .section-content:not(.active) {
+  display: none;
+}
+
+#wrapper .main-content #full-main-content .section-content {
+  padding-top: 8rem;
+}
+
+#wrapper .main-content #full-main-content .gioi-thieu h1 {
+  color: #e3a554;
+  line-height: 4rem;
 }
 
 #wrapper footer .footer > div {
