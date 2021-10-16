@@ -1,0 +1,32 @@
+.btnPrimary {
+  background: #f3cb62;
+  -webkit-box-shadow: 0 2px 2px rgba(90, 90, 90, 0.15);
+          box-shadow: 0 2px 2px rgba(90, 90, 90, 0.15);
+  border-radius: 30px;
+  padding: 4px 49px;
+  font-size: 24px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: UTMBebas;
+}
+
+.border-solid {
+  border: 1px solid #c8b89e;
+}
+
+.border-top-solid {
+  border-top: 1px solid #c8b89e;
+}
+
+.border-right-solid {
+  border-right: 1px solid #c8b89e;
+}
+
+.border-bottom-solid {
+  border-bottom: 1px solid #c8b89e;
+}
+
+.border-left-solid {
+  border-left: 1px solid #c8b89e;
+}
+/*# sourceMappingURL=style-config.css.map */
