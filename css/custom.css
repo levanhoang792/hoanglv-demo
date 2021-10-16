@@ -87,6 +87,12 @@
   top: 0;
 }
 
+@media (max-width: 1000px) {
+  #wrapper #menu {
+    display: none !important;
+  }
+}
+
 #wrapper #menu .item-center > a {
   color: #9e856e;
   border-radius: 5px;

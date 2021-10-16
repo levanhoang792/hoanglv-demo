@@ -76,6 +76,9 @@
         position: fixed;
         width: 100vw;
         top: 0;
+        @media (max-width: 1000px) {
+            display: none !important;
+        }
         .item-center {
             & > a {
                 color: #9e856e;

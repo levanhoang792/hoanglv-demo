@@ -8,7 +8,13 @@ $(function () {
         startPosition: 0,
         autoHeight:true,
         responsive: {
-            600: {
+            0: {
+                items: 1
+            },
+            500: {
+                items: 1.5
+            },
+            1000: {
                 items: 3
             }
         }
