@@ -137,7 +137,7 @@
   font-size: 4rem;
 }
 
-@media (min-width: 700px) {
+@media (max-width: 700px) {
   #wrapper #body-main-content #full-main-content .section-content h1 {
     line-height: 4rem;
     margin: .5rem 0;
@@ -145,7 +145,7 @@
   }
 }
 
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   #wrapper #body-main-content #full-main-content .section-content h1 {
     line-height: 3.5rem;
     margin: .5rem 0;
@@ -153,17 +153,32 @@
   }
 }
 
-@media (min-width: 700px) {
+@media (max-width: 300px) {
+  #wrapper #body-main-content #full-main-content .section-content h1 {
+    line-height: 2.5rem;
+    margin: .5rem 0;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 700px) {
   #wrapper #body-main-content #full-main-content .gioi-thieu .image-content img {
     width: 300px;
     height: 350px;
   }
 }
 
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   #wrapper #body-main-content #full-main-content .gioi-thieu .image-content img {
     width: 250px;
     height: 300px;
+  }
+}
+
+@media (max-width: 300px) {
+  #wrapper #body-main-content #full-main-content .gioi-thieu .image-content img {
+    width: 150px;
+    height: 200px;
   }
 }
 
