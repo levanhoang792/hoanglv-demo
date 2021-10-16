@@ -84,10 +84,8 @@
         background-size: cover;
         background-position: 50%;
         background-repeat: no-repeat;
-        height: 100vh;
         width: 100%;
         background-attachment: fixed;
-        display: inline-table;
         #full-main-content {
             height: 100%;
             .section-content:not(.active) {
@@ -141,9 +139,6 @@
 
     footer {
         .footer {
-            // & > div {
-            //     flex: 0 0 50%;
-            // }
             .footer-right {
                 padding: 0 0;
                 & > div > div {
