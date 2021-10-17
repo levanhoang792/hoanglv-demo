@@ -31,35 +31,37 @@ $(function () {
     //     scrollTop: $("#body-main-content").offset().top
     // }, 2000);
 
-    var body = $("html, body");
+    // var body = $("html, body");
 
-    $('#button').click(function () {
-        $("#gioi-thieu").css("opacity", "0");
-        body.stop().animate({ scrollTop: 0 }, 0, 'swing', () => {
-            $("div").animate({
-                opacity: '1'
-            }, 1500);
-        });
-    });
+    // $('#button').click(function () {
+    //     $("#gioi-thieu").css("opacity", "0");
+        
+    // });
 
 
 
-    // let iScrollTop = 0;
-    // const gioiThieu = $("#gioi-thieu").height();
-    // const hotInformation = $("#hot-information").height();
+    let iScrollTop = 0;
+    const gioiThieu = $("#gioi-thieu").height();
+    const hotInformation = $("#hot-information").height();
     // scrollFuntion(iScrollTop, gioiThieu);
 });
 
-// function scrollFuntion(iScrollTop, gioiThieu) {
-//     $(window).on("scroll", function () {
-//         const iCurScrollTop = $(window).scrollTop();
-//         if (iCurScrollTop > iScrollTop) {
-//             if (iCurScrollTop < gioiThieu) {
-//                 $(window).off("scroll");
-//                 $("#hot-information")[0].scrollIntoView();
-//                 console.log($(window).scrollTop())
-//                 // console.log("🚀 ~ file: custom.js ~ line 23 ~ $(window).scrollTop()", $("#gioi-thieu")[0].scrollHeight)
-//             }
-//         }
-//     });
-// }
+function scrollFuntion(iScrollTop, gioiThieu) {
+    $(window).on("scroll", function () {
+        const iCurScrollTop = $(window).scrollTop();
+        if (iCurScrollTop > iScrollTop) {
+            if (iCurScrollTop < gioiThieu) {
+                // $(window).off("scroll");
+                // $("#hot-information").css("opacity", "0");
+                // $("html, body").stop().animate({ scrollTop: $("#gioi-thieu")[0].scrollHeight }, 0, 'swing', () => {
+                //     // scrollFuntion(iScrollTop, gioiThieu);
+                //     $("div").animate({
+                //         opacity: '1'
+                //     }, 1500);
+                // });
+                console.log($(window).scrollTop())
+                // console.log("🚀 ~ file: custom.js ~ line 23 ~ $(window).scrollTop()", $("#gioi-thieu")[0].scrollHeight)
+            }
+        }
+    });
+}

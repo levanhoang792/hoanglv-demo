@@ -420,6 +420,10 @@
   height: 100vh;
 }
 
+.mh--100vh {
+  min-height: 100vh;
+}
+
 /* Section padding */
 .section-padding--xlg {
   padding: 80px 0;
@@ -548,6 +552,10 @@
   list-style: none;
   text-decoration: none !important;
   font-family: UTMBebas !important;
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }
 
 *::before,

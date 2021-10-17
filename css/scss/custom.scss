@@ -21,6 +21,10 @@
     font-family: UTMBebas !important;
 }
 
+*::-webkit-scrollbar {
+    display: none;
+}
+
 *::before,
 *::after {
     box-sizing: border-box;
