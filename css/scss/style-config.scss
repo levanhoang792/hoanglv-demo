@@ -1,8 +1,8 @@
 @font-face {
     font-family: UTMBebas;
     src: url("webfonts/UTM\ Bebas.ttf") format("truetype");
-        // url("../fonts/Captureit.eot#iefix") format("embedded-opentype"),
-        // url("../fonts/Captureit.woff") format("woff");
+    // url("../fonts/Captureit.eot#iefix") format("embedded-opentype"),
+    // url("../fonts/Captureit.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -10,8 +10,8 @@
 @font-face {
     font-family: UTMImpact;
     src: url("webfonts/UTM\ Impact.ttf") format("truetype");
-        // url("../fonts/Captureit.eot#iefix") format("embedded-opentype"),
-        // url("../fonts/Captureit.woff") format("woff");
+    // url("../fonts/Captureit.eot#iefix") format("embedded-opentype"),
+    // url("../fonts/Captureit.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -19,8 +19,8 @@
 @font-face {
     font-family: UTMMontserrat;
     src: url("webfonts/Montserrat-Black.ttf") format("truetype");
-        // url("../fonts/Captureit.eot#iefix") format("embedded-opentype"),
-        // url("../fonts/Captureit.woff") format("woff");
+    // url("../fonts/Captureit.eot#iefix") format("embedded-opentype"),
+    // url("../fonts/Captureit.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -28,8 +28,8 @@
 @font-face {
     font-family: UTMMontserratSemiBold;
     src: url("webfonts/Montserrat-SemiBold.ttf") format("truetype");
-        // url("../fonts/Captureit.eot#iefix") format("embedded-opentype"),
-        // url("../fonts/Captureit.woff") format("woff");
+    // url("../fonts/Captureit.eot#iefix") format("embedded-opentype"),
+    // url("../fonts/Captureit.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -71,6 +71,27 @@
 }
 .border-left-solid {
     border-left: 1px solid #c8b89e;
+}
+
+/* Responsive */
+$m700: 700px;
+$m500: 500px;
+$m340: 340px;
+
+@mixin m340 {
+    @media (min-width: 0) and (max-width: #{$m340}) {
+        @content;
+    }
+}
+@mixin m500 {
+    @media (min-width: $m340) and (max-width: #{$m500}) {
+        @content;
+    }
+}
+@mixin m700 {
+    @media (min-width: $m500) and (max-width: #{$m700}) {
+        @content;
+    }
 }
 
 /* spacing */

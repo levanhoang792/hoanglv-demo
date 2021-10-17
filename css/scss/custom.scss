@@ -1,3 +1,5 @@
+@import 'style-config';
+
 @font-face {
     font-family: UTMBebas;
     src: url("webfonts/UTM\ Bebas.ttf") format("truetype");
@@ -29,10 +31,22 @@
     border-radius: 40px;
     color: #fff;
     text-transform: uppercase;
-    font-size: 35px;
-    width: 84px;
+    font-size: 2.5rem;
+    width: 6rem;
     margin: auto;
     padding-bottom: 5px;
+    @include m340 {
+        font-size: 1.2rem;
+        width: 4rem;
+    }
+    @include m500 {
+        font-size: 1.8rem;
+        width: 5rem;
+    }
+    @include m700 {
+        font-size: 2rem;
+        width: 5rem;
+    }
 }
 
 .hot-title {
@@ -60,6 +74,18 @@
     padding-right: 3.8rem;
     margin-left: auto;
     margin-right: auto;
+    @include m340 {
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+    }
+    @include m500 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    @include m700 {
+        padding-left: 2.1rem;
+        padding-right: 2.1rem;
+    }
 }
 
 .owl-carousel .owl-stage {
@@ -115,36 +141,36 @@
                     line-height: 5rem;
                     margin: 2rem 0;
                     font-size: 4rem;
-                    @media (max-width: 700px) {
-                        line-height: 4rem;
+                    @include m340 {
+                        line-height: 2.5rem;
                         margin: .5rem 0;
-                        font-size: 3rem;
+                        font-size: 1.5rem;
                     }
-                    @media (max-width: 500px) {
+                    @include m500 {
                         line-height: 3.5rem;
                         margin: .5rem 0;
                         font-size: 2.5rem;
                     }
-                    @media (max-width: 300px) {
-                        line-height: 2.5rem;
+                    @include m700 {
+                        line-height: 4rem;
                         margin: .5rem 0;
-                        font-size: 1.5rem;
+                        font-size: 3rem;
                     }
                 }
             }
             .gioi-thieu {
                 .image-content img {
-                    @media (max-width: 700px) {
-                        width: 300px;
-                        height: 350px;
+                    @include m340 {
+                        width: 150px;
+                        height: 200px;
                     }
-                    @media (max-width: 500px) {
+                    @include m500 {
                         width: 250px;
                         height: 300px;
                     }
-                    @media (max-width: 300px) {
-                        width: 150px;
-                        height: 200px;
+                    @include m700 {
+                        width: 300px;
+                        height: 350px;
                     }
                 }
                 h1 {
@@ -169,6 +195,22 @@
                                 background-color: #ffffff;
                                 border-radius: 50%;
                                 margin: 0.5rem;
+                                & > img {
+                                    width: 67px;
+                                    height: 75px;
+                                    @include m340 {
+                                        width: 30px;
+                                        height: 36px;
+                                    }
+                                    @include m500 {
+                                        width: 50px;
+                                        height: 56px;
+                                    }
+                                    @include m700 {
+                                        width: 58px;
+                                        height: 64px;
+                                    }
+                                }
                             }
                         }
                     }
@@ -182,7 +224,18 @@
                     & .content-mid h3 {
                         font-size: 1.35rem;
                         line-height: 2rem;
-                        font-weight: 100;
+                        @include m340 {
+                            font-size: .75rem;
+                            line-height: 1.1rem;
+                        }
+                        @include m500 {
+                            font-size: .9rem;
+                            line-height: 1.5rem;
+                        }
+                        @include m700 {
+                            font-size: 1rem;
+                            line-height: 1.75rem;
+                        }
                     }
                     & .content-bot #slider .owl-carousel .items {
                         display: grid;
