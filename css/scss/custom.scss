@@ -1,4 +1,4 @@
-@import 'style-config';
+@import "style-config";
 
 @font-face {
     font-family: UTMBebas;
@@ -143,22 +143,23 @@
                     font-size: 4rem;
                     @include m340 {
                         line-height: 2.5rem;
-                        margin: .5rem 0;
+                        margin: 0.5rem 0;
                         font-size: 1.5rem;
                     }
                     @include m500 {
                         line-height: 3.5rem;
-                        margin: .5rem 0;
+                        margin: 0.5rem 0;
                         font-size: 2.5rem;
                     }
                     @include m700 {
                         line-height: 4rem;
-                        margin: .5rem 0;
+                        margin: 0.5rem 0;
                         font-size: 3rem;
                     }
                 }
             }
             .gioi-thieu {
+                animation: fadeIn 2s;
                 .image-content img {
                     @include m340 {
                         width: 150px;
@@ -225,11 +226,11 @@
                         font-size: 1.35rem;
                         line-height: 2rem;
                         @include m340 {
-                            font-size: .75rem;
+                            font-size: 0.75rem;
                             line-height: 1.1rem;
                         }
                         @include m500 {
-                            font-size: .9rem;
+                            font-size: 0.9rem;
                             line-height: 1.5rem;
                         }
                         @include m700 {

@@ -6,7 +6,7 @@ $(function () {
         margin: 10,
         nav: true,
         startPosition: 0,
-        autoHeight:true,
+        autoHeight: true,
         responsive: {
             0: {
                 items: 1
@@ -19,6 +19,30 @@ $(function () {
             }
         }
     });
+
+    // $("#button").click(function() {
+    //     $([document.documentElement, document.body]).animate({
+    //         scrollTop: $("#body-main-content").offset().top
+    //     }, 1000);
+    // });
+
+
+    // $([document.documentElement, document.body]).animate({
+    //     scrollTop: $("#body-main-content").offset().top
+    // }, 2000);
+
+    var body = $("html, body");
+
+    $('#button').click(function () {
+        $("#gioi-thieu").css("opacity", "0");
+        body.stop().animate({scrollTop:0}, 0, 'swing', () => {
+            $("div").animate({
+                opacity:'1'
+            }, 1500);
+        });
+    });
+
+
 
     // let iScrollTop = 0;
     // const gioiThieu = $("#gioi-thieu").height();

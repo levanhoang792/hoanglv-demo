@@ -94,6 +94,15 @@ $m340: 340px;
     }
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 /* spacing */
 .mt--20 {
     margin-top: 20px;
