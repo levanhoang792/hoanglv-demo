@@ -35,9 +35,9 @@ $(function () {
 
     $('#button').click(function () {
         $("#gioi-thieu").css("opacity", "0");
-        body.stop().animate({scrollTop:0}, 0, 'swing', () => {
+        body.stop().animate({ scrollTop: 0 }, 0, 'swing', () => {
             $("div").animate({
-                opacity:'1'
+                opacity: '1'
             }, 1500);
         });
     });
